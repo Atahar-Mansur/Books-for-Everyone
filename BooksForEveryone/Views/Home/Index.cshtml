@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            .container-div {
+                background-image: linear-gradient(#f7b5b5, #a997be);
+                background-color: #cccccc;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="col-md-12" style="background-color: #f7b5b5;"><br /><br /></div>
+
+        <div id="MainDiv" class="container-div">
+            <div class="container">
+
+                <div class="col-md-12">
+
+                    @*Post Box*@
+                    <div class="col-md-8 panel panel-default">
+                        <div class="col-md-12"><br /></div>
+                        <div class="col-md-12"><textarea id="txtBookDescription" cols="80" rows="6" class="form-control"></textarea></div>
+                        <div class="col-md-12"><input id="txtPostBookName" type="text" placeholder="Book name" class="form-control" /></div>
+                        <div class="col-md-12"><input id="txtPostBookWriterName" type="text" placeholder="Writer name" class="form-control" /></div>
+
+                        <div class="dropdown col-md-12">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-4">
+                                <button class="btn btn-success form-control dropdown-toggle" type="button" data-toggle="dropdown">
+                                    Post for Books
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">I want to Giveaway this book</a></li>
+                                    <li><a href="#">I am looking for this book</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    @*--------*@
+
+                    @*Search Box*@
+                    <div class="col-md-4">
+                        <div class="col-md-12"><br /></div>
+                        <div class="col-md-12">
+                            <input id="txtSearchBookName" type="text" placeholder="Search Book..." class="form-control" />
+                        </div>
+                        <div class="col-md-7"></div>
+                        <div class="col-md-5">
+                            <button id="btnSearch" type="button" class="btn btn-info form-control">
+                                <span class="glyphicon glyphicon-search"></span> Search
+                            </button>
+                        </div>
+                    </div>
+                    @*----------*@
+
+                </div>
+
+                <div class="col-md-12"><br /></div>
+
+                <div class="col-md-12">
+
+                    @*All Posts*@
+                    <div class="col-md-8 panel panel-default">
+                        <div class="col-md-12"><br /></div>
+                        <div class="dropdown col-md-12">
+                            <div class="col-md-4">
+                                <button class="btn btn-info form-control dropdown-toggle" type="button" data-toggle="dropdown">
+                                    Post Owner
+                                </button>
+                                <ul class="dropdown-menu pull-left">
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Massage</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-8"></div>
+                        </div>
+
+                        <div class="col-md-12"><label id="lblBookDescription" cols="80" rows="6" class="form-control"></label></div>
+                        <div class="col-md-12"><label id="lblBookDetails" cols="80" rows="6" class="form-control"></label></div>
+
+                        <div class="col-md-12"><br /></div>
+                    </div>
+                    @*---------*@
+
+                    <div class="col-md-4"><br /></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
